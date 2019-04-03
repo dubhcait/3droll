@@ -11,7 +11,7 @@
         </head>
         <body>
                 <div class="scene">
-                        <div class="cube">
+                        <div class="cube" id="cube_one">
                           <div class="cube__face cube__face--front">front</div>
                           <div class="cube__face cube__face--back">back</div>
                           <div class="cube__face cube__face--right">right</div>
@@ -20,6 +20,18 @@
                           <div class="cube__face cube__face--bottom">bottom</div>
                         </div>
                       </div>
+                      
+                <div class="scene">
+                  <div class="cube" id="cube_two">
+                    <div class="cube__face cube__face--front">front</div>
+                    <div class="cube__face cube__face--back">back</div>
+                    <div class="cube__face cube__face--right">right</div>
+                    <div class="cube__face cube__face--left">left</div>
+                    <div class="cube__face cube__face--top">top</div>
+                    <div class="cube__face cube__face--bottom">bottom</div>
+                  </div>
+                </div>
+
                       <p class="radio-group">
                         <label>
                           <input type="radio" name="rotate-cube-side" value="front" checked /> front
