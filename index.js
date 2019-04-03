@@ -5,9 +5,9 @@ var currentClass = '';
 
 function changeSide(cubeSelected, side) {
   var showClass = 'show-' + side;
-  console.log(showClass);
+  // console.log(showClass);
   const classCheck = cubeSelected.classList;
-  console.log(classCheck);  
+  // console.log(classCheck);  
   cubeSelected.classList.remove(classCheck[1]);
   
   cubeSelected.classList.add(showClass);
