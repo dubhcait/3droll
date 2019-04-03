@@ -1,20 +1,34 @@
 var cubeOne = document.querySelector('#cube_one');
 var cubeTwo =  document.querySelector('#cube_two');
-var radioGroup = document.querySelector('.radio-group');
+var button = document.querySelector('#roll_button');
 var currentClass = '';
 
-function changeSide() {
-  var checkedRadio = radioGroup.querySelector(':checked');
-  var showClass = 'show-' + checkedRadio.value;
-  if ( currentClass ) {
-    cubeOne.classList.remove( currentClass );
-    cubeTwo.classList.remove( currentClass );
-  }
-  cubeOne.classList.add( showClass );
-  cubeTwo.classList.add( showClass );
-  currentClass = showClass;
+function changeSide(cubeSelected, side) {
+  var showClass = 'show-' + side;
+  console.log(showClass);
+  const classCheck = cubeSelected.classList;
+  console.log(classCheck);  
+  cubeSelected.classList.remove(classCheck[1]);
+  
+  cubeSelected.classList.add(showClass);
 }
-// set initial side
-changeSide();
 
-radioGroup.addEventListener( 'change', changeSide );
+const random_number = function(range) {
+  return Math.floor(Math.random() * range);
+}
+
+const arrayOfSides = ["front",  "right" , "back", "left", "top", "bottom" ]
+// set initial side
+
+
+const roll = function () {
+  
+  changeSide(cubeOne, arrayOfSides[random_number(arrayOfSides.length)] );
+  changeSide(cubeTwo, arrayOfSides[random_number(arrayOfSides.length)] );
+}
+
+changeSide(cubeOne, "front" );
+changeSide(cubeTwo, "front" );
+
+
+button.addEventListener( 'click', roll );
