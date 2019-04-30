@@ -4,74 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="normalise.css" media="screen">
     <link rel="stylesheet" href="style.css" media="screen">
     <title>Document</title>
 
         </head>
         <body>
-        <input type="radio" name="roll" id="btnFront">Front
-        <input type="radio" name="roll" id="btnRight">Right
-        <input type="radio" name="roll" id="btnBack">Back
-        <input type="radio" name="roll" id="btnLeft">Left
-        <input type="radio" name="roll" id="btnTop">Top
-        <input type="radio" name="roll" id="btnBottom">Bottom
-            <div id="view">
-                <div id="dice">
-                    <div class="diceFace first-face" id="front">
-                            <span class="pip"></span></div>
-
-                    <div class="diceFace second-face" id="right">
+          <div class="container">
+            <div class="diceContainer">
+                <div class="scene">
+                        <div class="cube" id="cube_one">
+                          <div class="cube__face cube__face--front  first-face">
                             <span class="pip"></span>
-                            <span class="pip"></span></div>
-
-                    <div class="diceFace third-face" id="back">
-                        <span class="pip"></span>
-                        <span class="pip"></span>
-                         <span class="pip"></span>
                           </div>
-
-                    <div class="diceFace fourth-face" id="left">
-                            <div class="column">
-                              <span class="pip"></span>
-                              <span class="pip"></span>
-                            </div>
-                            <div class="column">
-                              <span class="pip"></span>
-                              <span class="pip"></span>
-                            </div>
+                          <div class="cube__face cube__face--back second-face">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
                           </div>
-
-                    <div class="diceFace fifth-face" id="top">
-                            <div class="column">
-                              <span class="pip"></span>
-                              <span class="pip"></span>
-                            </div>
-                            <div class="column">
-                              <span class="pip"></span>
-                            </div>
-                            <div class="column">
-                              <span class="pip"></span>
-                              <span class="pip"></span>
-                            </div>
+                          <div class="cube__face cube__face--right third-face"> 
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                            <span class="pip"></span>
                           </div>
-
-                    <div class="diceFace sixth-face" id="bottom">
-                            <div class="column">
-                              <span class="pip"></span>
-                              <span class="pip"></span>
-                              <span class="pip"></span>
-                            </div>
-                            <div class="column">
-                              <span class="pip"></span>
-                              <span class="pip"></span>
-                              <span class="pip"></span>
-                            </div>
+                          <div class="cube__face cube__face--left fourth-face">  
+                             <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
                           </div>
+                          <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                          </div>
+                        </div>
+                          <div class="cube__face cube__face--top fifth-face"> 
+                             <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                          </div>
+                          <div class="column">
+                            <span class="pip"></span>
+                          </div>
+                          <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                          </div>
+                        </div>
+                          <div class="cube__face cube__face--bottom sixth-face">   
+                            <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                          </div>
+                          <div class="column">
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                            <span class="pip"></span>
+                          </div>
+                        </div>
+
+                        </div>
+                      </div>
+                      
+                <div class="scene">
+                  <div class="cube" id="cube_two">
+                      <div class="cube__face cube__face--front  first-face">
+                          <span class="pip"></span>
+                        </div>
+                        <div class="cube__face cube__face--back second-face">
+                          <span class="pip"></span>
+                          <span class="pip"></span>
+                        </div>
+                        <div class="cube__face cube__face--right third-face"> 
+                          <span class="pip"></span>
+                          <span class="pip"></span>
+                          <span class="pip"></span>
+                        </div>
+                        <div class="cube__face cube__face--left fourth-face">  
+                           <div class="column">
+                          <span class="pip"></span>
+                          <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                          <span class="pip"></span>
+                          <span class="pip"></span>
+                        </div>
+                      </div>
+                        <div class="cube__face cube__face--top fifth-face"> 
+                           <div class="column">
+                          <span class="pip"></span>
+                          <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                          <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                          <span class="pip"></span>
+                          <span class="pip"></span>
+                        </div>
+                      </div>
+                        <div class="cube__face cube__face--bottom sixth-face">   
+                          <div class="column">
+                          <span class="pip"></span>
+                          <span class="pip"></span>
+                          <span class="pip"></span>
+                        </div>
+                        <div class="column">
+                          <span class="pip"></span>
+                          <span class="pip"></span>
+                          <span class="pip"></span>
+                        </div>
+                      </div>
+                  </div>
                 </div>
             </div>
-            
-        </body>
-        </html>
+                <button id="roll_button">Roll</button> 
+              </div>
+
+                    
+<script src="./index.js"></script>                      
 </body>
 </html>
